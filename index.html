@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Chaz Thornton: Exam 2 Problem</title>
+    <link rel="stylesheet" type="text/css" href="styles/Exam2problem.css" />
+    <script src="js/Exam2Problem.js"></script>
+</head>
+
+<body>
+<h1>Chaz Thornton: Exam 2 Problem</h1>
+
+ <select onchange="SelectSection()" id="selection">
+            <option>Choose a Section to Display</option>
+            <option>Display Category List</option>
+             <option>Add Product Category</option>
+              <option>Update Category Description</option>
+              <option>Delete Category</option>
+              <option>Display About</option>
+        </select>
+
+<section id="section1">
+    <h3>Display Categories</h3>
+    <button onclick="getCategory()" id="GetCategory">Display All Categories</button>
+    <br>
+        <hr>
+     <label id="labelCategory">Categories will be displayed here</label>
+     <br>
+        <hr>
+    
+    
+</section>
+
+<section id="section2">
+    <h3>Create New Category</h3>
+    <label>Please enter the category name: </label>
+    <input type="text" id="catName">
+        <br><br>
+        <label>Please enter the category description: </label>
+        <input type="text" id="catDescript">
+            <br><br>
+            
+            <button onclick="CreateCategory()" id="CreateCatButton">Create Category</button>
+            <hr>
+            <label id="catResultLabel"> Operation's result will be displayed here</label>
+            <br><hr>
+            
+            </section>
+
+            <section id="section3">
+                <h3>Update Category Description</h3>
+                <label>Please enter the category ID: </label>
+                <input type="text" id="catID">
+                    <br><br>
+                    <label>Update Category description here: </label>
+                    <input type="text" id="updatedescrlabel">
+                        <br><br>
+                        <button onclick="UpdateDescription()" id="updateDescriptbutton">Change Category Description</button>
+                    <hr>
+                       
+                       <label id="updateResultlabel">The operation's result will be displayed here.</label>
+                    <hr>
+            </section>
+            
+            <section id="section4">
+                 <h3>Delete a Category</h3>
+                <label>Enter Category ID to be deleted: </label>
+                <input type="text" id="delCatID">
+                <br><br>
+                <button onclick="DeleteCategory()" id="deleteCatButton">Delete Category</button>
+                <br>
+                    
+                    <hr>
+                 <label id="deleteResult">The operation's result will display here.</label>
+                 <hr>
+            </section>
+            
+            <section id="section5">
+                <h3>About</h3>
+                
+                <label>Name: Chaz Thornton <br> Hometown: Birmingham, AL <br> School: University of Alabama at Birmingham<br> Class: Senior</label>
+            </section>
+</body>
+</html>

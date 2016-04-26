@@ -1,0 +1,13 @@
+table, th, td { border: 1px solid black;}
+
+body {background-color: #990000; color: white;}
+
+#section1 {visibility: hidden; position: absolute; width: 600px;}
+
+#section2 {visibility: hidden; position: absolute; width: 600px;}
+
+#section3 {visibility: hidden; position: absolute; width: 600px;}
+
+#section4 {visibility: hidden; position: absolute; width: 600px;}
+
+#section5 {visibility: hidden; position: absolute; width: 600px;}
